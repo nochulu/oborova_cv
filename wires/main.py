@@ -18,7 +18,7 @@ for wires_id in range (1, np.max(labeled_image) + 1 ):
     parts = opening(wire, struct)
     labeled_parts = label(parts)
     parts_count = np.max(labeled_parts)
-    print(f"Wire #6+{wires_id} {parts_count} parts")
+    print(f"Wire #{wires_id} {parts_count} parts")
 
 plt.subplot(121)
 plt.imshow(image)
